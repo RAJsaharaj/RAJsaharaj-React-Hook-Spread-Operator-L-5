@@ -1,24 +1,14 @@
-import React, {useState} from 'react';
+import React from 'react';
+
 
 import './App.css';
+import UseStateObject from './Component/UseStateObject';
 
 function App() {
-  const [myName,setMyName] = useState('codecuri');
- 
-  const changeName = () =>{
-    let val = myName;
-
-    if (val === 'codecuri') {
-      setMyName('svci computer')
-    }else {
-      setMyName('codecuri')
-    }
-  }
-
+  
   return (
     <div>
-       <h1>{ myName }</h1>
-       <button className="btn" onClick={changeName}>click me plz </button>
+      <UseStateObject />
     </div>
   );
 }
